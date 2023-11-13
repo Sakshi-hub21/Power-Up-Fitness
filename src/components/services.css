@@ -1,0 +1,11 @@
+
+.card-design{
+    margin: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+#container{
+    padding: 20px;
+    margin: 20px;
+}

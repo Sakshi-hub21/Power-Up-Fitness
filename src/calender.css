@@ -1,0 +1,43 @@
+
+.h1-calendar{
+  font-size: 40px;
+  margin-left: 150px;
+  color: red;
+}
+.calendar{
+  margin-left: 340px;
+  height: 500px;
+  width: 70vw;
+} 
+.calendar-event {
+  font-size: 8px;
+}
+
+.bg-calendar{
+  background-color: rgb(221, 185, 207)
+}
+
+@media screen and (max-width: 750px) {
+  .calendar {
+    margin-left: 150px;
+    width: 70%;
+    height: 70vh;
+    overflow-y: auto;
+
+}
+  .calendar-event {
+  font-size: 2px;
+}
+}
+
+@media (min-width:751) and (max-width: 1000px) {
+  .calendar {
+    margin-left: 350px;
+    width: 50%;
+    height: 70vh;
+    overflow-y: auto;
+
+}
+
+
+}

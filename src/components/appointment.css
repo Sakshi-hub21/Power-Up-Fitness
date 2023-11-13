@@ -1,0 +1,43 @@
+#container-appoint{
+    margin-top: 20px;
+    height: 67vh;
+    width: 70%;
+    border: 2px solid black;
+
+}
+
+.form{
+    margin-top: 15px;
+    padding:px;
+    
+}
+
+#text-area{
+
+    padding: 10px;
+}
+
+.area{
+    border: 1px solid black;
+}
+
+#button{
+    margin: 15px;
+}
+
+@media screen and (max-width: 1078px) {
+    #container-appoint {
+      /* Tablet CSS styles */
+      height: 80vh;
+    width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #container-appoint {
+      /* Mobile CSS styles */
+      height: 80vh;
+      width: 50%;
+    }
+  }
+  

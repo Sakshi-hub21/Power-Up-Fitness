@@ -1,0 +1,74 @@
+
+.body-f{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(181, 120, 238);
+}
+.h1-add{
+    color: white;
+}
+.container-add{
+    background-color: whitesmoke;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px 2px black;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 30px;
+
+
+}
+
+.input-1{
+    width: 40vw;
+    margin: 8px;
+    border: 1px solid black;
+}
+
+ .rounded-clock-picker {
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+   .button-1 {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    
+  }
+  
+    .button-1:hover {
+    background-color: rgb(183, 131, 231);
+    border-color: rgb(157, 58, 250);
+  }
+ 
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input {
+    display: block;
+    width: 100%;
+  }
+  
+
+/* For screens less than 600px wide */
+@media (max-width: 750px) {
+    .container-add {
+      width: 80vw;
+      height: 80vh;
+    }
+  
+    .form-group input {
+      width: 60vw;
+      margin: 5px;
+    }
+  
+    .rounded-clock-picker {
+      height: 25px;
+    }
+  }
+  
