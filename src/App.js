@@ -12,6 +12,7 @@ import Addclient from "./components/addclient.js"
 import Add from "./components/add.js"
 import MyCalendar from "./calender.js"
 import Edit from "./components/edit.js"
+import ClientDash from "./components/clientdash.js"
 
 function App() {
 
@@ -31,7 +32,9 @@ function App() {
         <Route path="/addclient" element={<Addclient/>} />
         <Route path="/add" element={<Add/>} />
         <Route path="/calender" element={<MyCalendar/>} />
+        <Route path="/clientdash" element={<ClientDash/>} />
         <Route path="/edit/:id" element={<Edit/>} />
+        
 
       </Routes>
     </Router>

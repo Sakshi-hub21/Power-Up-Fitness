@@ -65,7 +65,7 @@ export default function Aboutus() {
                       <Link to="/login" className="dropdown-item">
                     Admin
                   </Link>
-                      <Link to="/login" className="dropdown-item">
+                      <Link to="/loginclient" className="dropdown-item">
                     Client
                   </Link>
                         {/* <li className="dropdown-item ">Admin</li>

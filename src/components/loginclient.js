@@ -4,43 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [loginData, setLoginData] = useState({
-    username: "",
-    password: "",
-  });
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    // Send login data to the backend
-    try {
-      const response = await fetch("http://localhost:5000/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(loginData),
-      });
-
-      if (response.ok) {
-        console.log(loginData.username);
-
-        // Handle success, e.g., redirect to a dashboard
-        console.log("Login successful!");
-      } else {
-        // Handle error, e.g., show an error message
-        console.error("Invalid username or password");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setLoginData({ ...loginData, [name]: value });
-  };
-
+  const handleSubmit=()=>{
+    navigate("/clientdash");
+  }
   return (
     <>
     <div className="login-bg d-flex justify-content-center align-items-center " style={{ width: '100vw', height: '100vh' }}>
@@ -54,16 +20,15 @@ const Login = () => {
             type="text"
             name="username"
             placeholder="Username"
-            value={loginData.username}
-            onChange={handleChange}
+           
+    
             className="input-field my-2 px-4 py-2"
           />
           <input
             type="password"
             name="password"
             placeholder="Password"
-            value={loginData.password}
-            onChange={handleChange}
+            
             className="input-field my-2 px-4 py-2"
           />
         </div>

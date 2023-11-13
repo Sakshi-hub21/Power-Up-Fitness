@@ -1,0 +1,59 @@
+.bg-slide{
+    height: 100vh;
+    background-color: rgb(252, 141, 215);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.button-3{
+    margin-left: 93vw;
+}
+  .h1-slide {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 4s;
+    animation-iteration-count: infinite;
+    color: rgb(133, 61, 61);
+    height: 20vh;
+    width: 40vw;
+    font-size: 60px;
+    margin:auto;
+
+  }
+
+
+  @keyframes example {
+    0%   {background-color: rgb(252, 141, 215);}
+    25%  {background-color: rgb(240, 240, 165);}
+    50%  {background-color: rgb(170, 170, 238);}
+    100% {background-color: rgb(196, 241, 196);}
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .bg-slide {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .h1-slide {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .bg-slide {
+      flex-direction: column;
+    }
+  }

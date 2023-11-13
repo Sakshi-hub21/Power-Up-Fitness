@@ -69,7 +69,7 @@ class Navbar extends React.Component {
                       <Link to="/login" className="dropdown-item">
                         Admin
                       </Link>
-                      <Link to="/login-client" className="dropdown-item">
+                      <Link to="/loginclient" className="dropdown-item">
                         Client
                       </Link>
 
