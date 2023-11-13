@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
 import Navbar from "./components/navbar.js";
 import Services from "./components/services.js";
 import Aboutus from "./components/aboutus.js";
@@ -25,8 +24,8 @@ function App() {
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/loginclient" element={<LoginClient/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/loginclient" element={<LoginClient/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/signupclient" element={<SignUpClient/>} />
         <Route path="/addclient" element={<Addclient/>} />

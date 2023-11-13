@@ -3,7 +3,7 @@ import React from "react";
 import "./navbar.css";
 import logo from "../fit1.png";
 import { Link } from "react-router-dom";
-import "./navigation.css";
+import './navbar.css'
 
 class Navbar extends React.Component {
   render() {
@@ -69,7 +69,7 @@ class Navbar extends React.Component {
                       <Link to="/login" className="dropdown-item">
                         Admin
                       </Link>
-                      <Link to="/loginclient" className="dropdown-item">
+                      <Link to="/login-client" className="dropdown-item">
                         Client
                       </Link>
 

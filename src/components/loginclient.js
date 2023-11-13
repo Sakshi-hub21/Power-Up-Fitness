@@ -24,7 +24,7 @@ const Login = () => {
 
       if (response.ok) {
         console.log(loginData.username);
-        navigate("/dashboard");
+
         // Handle success, e.g., redirect to a dashboard
         console.log("Login successful!");
       } else {

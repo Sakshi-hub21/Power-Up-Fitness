@@ -2,7 +2,7 @@ import React from "react";
 import "./aboutus.css";
 import logo from "../fit1.png";
 import { Link } from "react-router-dom";
-import './navigation.css'
+import './navbar.css'
 
 export default function Aboutus() {
   return (

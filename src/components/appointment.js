@@ -2,7 +2,7 @@ import React , { useState }from "react";
 import "./appointment.css";
 import logo from "../fit1.png";
 import { Link } from "react-router-dom";
-import './navigation.css'
+import './navbar.css'
 import { useNavigate } from "react-router-dom";
 
 export default function Appointment() {

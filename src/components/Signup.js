@@ -8,9 +8,6 @@ export default function Signup() {
   const navigate = useNavigate();
   const handlebutton = () => navigate('/login');
 
-  
-      
-  
   return (
 
     <>

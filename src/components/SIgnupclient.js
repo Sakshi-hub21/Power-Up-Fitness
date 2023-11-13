@@ -58,7 +58,7 @@ export default function Signup() {
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Register"/>
+          <input type="submit" value="Register" onClick={handlebutton}/>
         </div>
       </form>
     </div>
