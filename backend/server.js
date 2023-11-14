@@ -22,10 +22,10 @@ app.use(
   })
 );
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "id18768157_sakshi_810",
-  password: "Sakshi@123",
-  database: "id18768157_fitness",
+  host: "sql11.freemysqlhosting.net",
+  user: "sql11661889",
+  password: "RBANI631LH",
+  database: "sql11661889",
 });
 
 connection.connect((err) => {
