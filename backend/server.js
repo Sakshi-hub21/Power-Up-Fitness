@@ -36,7 +36,7 @@ connection.connect((err) => {
   console.log("Connected to MySQL database");
 });
 
-app.post("https://power-up-fitness.vercel.app/login", (req, res) => {
+app.post("/login", (req, res) => {
   const { username, password } = req.body;
   console.log("Received username:", username);
   console.log("Received password:", password);

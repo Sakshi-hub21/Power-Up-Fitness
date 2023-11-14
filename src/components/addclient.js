@@ -10,7 +10,7 @@ const Addclient = () => {
   useEffect(() => {
     async function fetchDataFromServer() {
       try {
-        const response = await fetch("http://localhost:5000/addclient", {
+        const response = await fetch("https://power-up-fitness-database1.onrender.com/addclient", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const Addclient = () => {
   const handleDelete = async (id) => {
     console.log(id);
     try {
-      const response = await fetch(`http://localhost:5000/delete/${id}`, {
+      const response = await fetch(`https://power-up-fitness-database1.onrender.com/delete/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

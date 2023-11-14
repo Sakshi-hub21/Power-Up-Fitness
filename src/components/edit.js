@@ -26,7 +26,7 @@ export default function Edit() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/read/${id}`, {
+        const response = await fetch(`https://power-up-fitness-database1.onrender.com/read/${id}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -64,7 +64,7 @@ export default function Edit() {
     event.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/update/${id}`, {
+      const response = await fetch(`https://power-up-fitness-database1.onrender.com/update/${id}`, {
         method: "PUT", // or "PATCH" depending on your API
         headers: {
           "Content-Type": "application/json",
