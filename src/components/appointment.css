@@ -1,11 +1,9 @@
 #container-appoint{
     margin-top: 20px;
-    height: 67vh;
-    width: 70%;
+    height: 70vh;
+    width: 80%;
     border: 2px solid black;
-
 }
-
 .form{
     margin-top: 15px;
     padding:px;
@@ -25,19 +23,21 @@
     margin: 15px;
 }
 
-@media screen and (max-width: 1078px) {
-    #container-appoint {
-      /* Tablet CSS styles */
-      height: 80vh;
-    width: 50%;
-    }
+/* Media query for smaller screens */
+@media (max-width: 750px) {
+  #container-appoint{
+    margin-top: 20px;
+    height: 72vh;
+    width: 70%;
+    border: 2px solid black;
+
+}
+  .input-field {
+    width: 90%; /* Set input fields to 100% width */
+    margin-bottom: 15px; /* Add margin between input fields */
   }
-  
-  @media screen and (max-width: 768px) {
-    #container-appoint {
-      /* Mobile CSS styles */
-      height: 80vh;
-      width: 50%;
-    }
+
+  .login-button {
+    margin-top: 15px; /* Add margin above the button */
   }
-  
+}

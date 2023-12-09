@@ -26,7 +26,7 @@ export default function Add() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://power-up-fitness-database1.onrender.com/add", {
+      const response = await fetch("https://power-up-fitness-database1.onrender.com:10000/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -8,7 +8,7 @@ class Dashboard extends React.Component {
       <div className="bg-slide d-flex justify-content-center align-items-center">
         
       <Sidebar />;
-      <h1 className="h1-slide text-center">Welcome Fitness Trainer</h1>
+      <h1 className="h1-slide text-center">Welcome Trainer</h1>
     </div>
     
     );

@@ -1,9 +1,25 @@
 /* App.css */
-.login-bg{
-    background-color: rgb(195, 195, 195);
-  }
-  
-  .login-container {
+.login-bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(172, 168, 168);
+}
+
+.full-page-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.blur-background {
+  filter: blur(4px); /* Adjust the blur intensity as needed */
+  pointer-events: none; /* Allows pointer events to pass through the blurred elements */
+}
+
+.login-container {
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -12,9 +28,54 @@
     align-items: center;
     height: 60vh;
     width: 50vw;
-  
   }
 
   .input-marg {
     width: 300px;
   }
+
+  @media (min-width :342px) and (max-width: 620px) {
+    .login-container {
+      width: 90%; /* Adjust the width for smaller screens */
+      padding: 10px; 
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Add padding for better spacing on smaller screens */
+    }
+  
+    .input-field {
+      width: 100%/* Set input fields to 100% width */
+
+    }
+    
+    .login-form {
+      margin-top: 20px; /* Add margin between form and other elements */
+    }
+
+  }
+  @media (max-width: 341px) {
+    .login-container {
+      width: 90%; /* Adjust the width for smaller screens */
+      padding: 10px; 
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* Add padding for better spacing on smaller screens */
+    }
+  
+    .input-field {
+      margin-left: 10px;
+      width: 80%/* Set input fields to 100% width */
+
+    }
+    
+    .login-form {
+      margin-top: 20px; /* Add margin between form and other elements */
+    }
+    .login-button{
+      width: 80%;
+    }
+
+  }
+  

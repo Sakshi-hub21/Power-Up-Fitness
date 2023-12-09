@@ -1,7 +1,7 @@
 
 
 #container-about{
-    height: 70vh;
+    height: 74vh;
     border: 2px solid black;
     box-shadow: 5px 5px 10px black;
  }
@@ -40,7 +40,7 @@
 
 @media (min-width: 200px) and (max-width: 1000px) {
     #container-about {
-        height: 90vh;
+        height: 100vh;
 
     }
   }

@@ -14,7 +14,7 @@ const Login = () => {
 
     // Send login data to the backend
     try {
-      const response = await fetch("https://power-up-fitness-database1.onrender.com/login", {
+      const response = await fetch("https://power-up-fitness-database1.onrender.com:10000/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -24,7 +24,7 @@ const Login = () => {
 
       if (response.ok) {
         console.log(loginData.username);
-        navigate("https://power-up-fitness-database1.onrender.com/dashboard");
+        navigate("https://power-up-fitness-database1.onrender.com:10000/dashboard");
         // Handle success, e.g., redirect to a dashboard
         console.log("Login successful!");
       } else {
