@@ -15,7 +15,7 @@
     border: 3px solid black;
     box-shadow: 5px 5px 5px 2px black;
     width: 80vw;
-    height: 98vh;
+    height: 100vh;
     border-radius: 30px;
 }
 
@@ -41,7 +41,6 @@
     background-color: #0d6efd;
     border-color: #0d6efd;
     color: #fff;
-       margin:20px;
     
   }
 
