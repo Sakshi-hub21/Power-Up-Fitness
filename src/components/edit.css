@@ -56,7 +56,7 @@
    */
 
 /* For screens less than 600px wide */
-@media (max-width: 750px) {
+@media (max-width: 720px) {
     .container-add {
       width: 80vw;
       height: 80vh;
