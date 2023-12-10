@@ -90,8 +90,6 @@ The request and response bodies that are used to communicate with the backend AP
 * Website Navigation Video
   ![]()
   
-
-
 * Website Home Page
 
   ![Screenshot (118)](https://www.kapwing.com/videos/6575a41baaf2115c8e986c01)
