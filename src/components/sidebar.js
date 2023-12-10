@@ -68,10 +68,10 @@ const Sidebar = () => {
           src={
             "https://www.freeiconspng.com/thumbs/login-icon/user-login-icon-29.png"
           }
-          style={{ height: "100px", width: "100px" }}
+          style={{ height: "50px", width: "50px" }}
         />
 
-        <h6 className="h2-data">{data}</h6>
+        <p className="p-data">{data}</p>
         
       </div>
       <div className="logo1"></div>
