@@ -75,5 +75,16 @@
     .rounded-clock-picker {
       height: 25px;
     }
+    .input-1{
+    width: 40vw;
+    margin: 0px;
+    padding:0px;
+}
+.input-2{
+    width: 30vw;
+    margin: 0px;
+    padding:0px;
+    border: 1px solid black;
+}
   }
   
