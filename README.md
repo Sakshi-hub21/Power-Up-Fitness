@@ -16,20 +16,21 @@ Power Up Fitness is a website for fitness trainer to schedule the client appoint
 
 * Frontend:
 
-### React.js: Frontend framework for building the user interface and managing components.
-### Libraries:
-###  react-datepicker: Used for date picker functionality.
-###  react-big-calendar: Utilized for displaying calendar events.
-###  moment: A JavaScript library for parsing, validating, manipulating, and formatting dates.
-###  axios: HTTP client for making requests to the backend API.
+1. React.js: Frontend framework for building the user interface and managing components
+2. Libraries:
+   a. react-datepicker: Used for date picker functionality.
+   b. react-big-calendar: Utilized for displaying calendar events.
+   c.  moment: A JavaScript library for parsing, validating, manipulating, and formatting dates.
+   d.  axios: HTTP client for making requests to the backend API.
 
 * Backend:
 
-## PHP: Backend scripting language used alongside XAMPP (Apache, MySQL, PHP, and Perl).
-## MySQL: Database management system for storing and managing data.
-Additional:
+1. PHP: Backend scripting language used alongside XAMPP (Apache, MySQL, PHP, and Perl).
+2. MySQL: Database management system for storing and managing data.
 
-* Composer: Dependency management tool for PHP used to install necessary PHP dependencies.
+* Additional:
+
+Composer: Dependency management tool for PHP used to install necessary PHP dependencies.
 
 ## Extra Packages
 
