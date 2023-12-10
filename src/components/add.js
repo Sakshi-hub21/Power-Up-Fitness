@@ -54,7 +54,7 @@ export default function Add() {
     <div className="container-add d-flex align-items-center justify-content-center ">
     
       <form onSubmit={handleSubmit}>
-      <div className="form-group">
+      <div className="form-group input-1">
             <label htmlFor="fname">First Name</label>
         <input
           type="text"
@@ -66,7 +66,7 @@ export default function Add() {
           onChange={handleChange}
         />
       </div>
-      <div className="form-group">
+      <div className="form-group input-1">
             <label htmlFor="fname">Last Name</label>
         <input
           type="text"
@@ -78,7 +78,7 @@ export default function Add() {
           onChange={handleChange}
         />
       </div>
-      <div className="form-group">
+      <div className="form-group input-1">
             <label htmlFor="fname">Location</label>
         <input
           type="text"
