@@ -22,7 +22,7 @@ const CustomEvent = ({ event }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: eventHeight }}>
       <div ref={titleRef}>{event.clientName}</div>
-      <div>{event.time}</div>
+      <span style={{ fontSize: "0.8em", color: "grey" }}> - {event.time}</span>
     </div>
   );
 };
