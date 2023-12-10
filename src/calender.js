@@ -21,8 +21,8 @@ const CustomEvent = ({ event }) => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: eventHeight }}>
-      <div ref={titleRef}>{event.clientName}</div>
-      <div>{event.time}</div>
+      <div ref={titleRef}>{event.clientName} {event.time}</div>
+
     </div>
   );
 };
