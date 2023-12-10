@@ -90,7 +90,7 @@ export default function Edit() {
     <h1 className=" h1-add text-center mb-3">Update Client Data</h1>
     <div className="container-add d-flex align-items-center justify-content-center ">
     <form onSubmit={handleUpdate}>
-      <div className="form-group">
+      <div className="form-group input-1">
         <label htmlFor="exampleInputfname">First Name</label>
         <input
           type="text"
