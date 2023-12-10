@@ -88,13 +88,13 @@ The request and response bodies that are used to communicate with the backend AP
 ## Usage Intruction
 
 * Website Navigation Video
-  [![Alt text for your video](https://www.kapwing.com/videos/6575a41baaf2115c8e986c01)]
+  ![]()
   
 
 
 * Website Home Page
 
-  ![Screenshot (118)](https://github.com/Sakshi-hub21/Power-Up-Fitness/assets/82663545/3d84b616-538b-4b92-8295-1f1275f9ad49)
+  ![Screenshot (118)](https://www.kapwing.com/videos/6575a41baaf2115c8e986c01)
 
   <p>This is a home page of the website with contains the our services page, about us page, book an appointment page, login and signup optiions which includes both trainer and client.</p>
 
