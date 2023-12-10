@@ -70,6 +70,7 @@
   
     .rounded-clock-picker {
       height: 25px;
+         width:40vw;
     }
   }
 /* @media (min-width: 300px) and (max-width: 700px) {
