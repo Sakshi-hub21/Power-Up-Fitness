@@ -80,6 +80,11 @@ The URL of the backend API.
 The HTTP methods that are used to call the backend API.
 The request and response bodies that are used to communicate with the backend API.</p>
 
+## Host mysql Database and website
+ * freemysqlhosting : https://www.freemysqlhosting.net/
+ * render : https://render.com/
+ * vercel : https://vercel.com/
+
 ## Usage Intruction
 
 * Website Navigation Video
