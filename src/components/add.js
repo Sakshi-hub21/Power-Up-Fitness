@@ -55,7 +55,7 @@ export default function Add() {
     
       <form onSubmit={handleSubmit}>
       <div className="form-group">
-      
+            <label htmlFor="fname">First Name</label>
         <input
           type="text"
           className="form-control input-2"
@@ -67,7 +67,7 @@ export default function Add() {
         />
       </div>
       <div className="form-group">
-
+            <label htmlFor="fname">Last Name</label>
         <input
           type="text"
           className="form-control input-2"
@@ -79,7 +79,7 @@ export default function Add() {
         />
       </div>
       <div className="form-group">
-
+            <label htmlFor="fname">Location</label>
         <input
           type="text"
           className="form-control input-2"
@@ -89,7 +89,7 @@ export default function Add() {
           onChange={handleChange}
         />
       </div>
-
+      
       <div className="form-group input-1">
       <label for="doa">Date of Appointment</label>
         <input
