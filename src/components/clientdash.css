@@ -7,9 +7,10 @@
     animation-iteration-count: infinite;
 }
 .button-3{
-    margin-left: 88vw;
+/*     margin-left: 88vw;
     margin-top: 10px;
-    margin-bottom: 80vh;
+    margin-bottom: 80vh; */
+    margin:auto;
 }
   .h1-slide {
     opacity: 0;
