@@ -44,7 +44,7 @@
     background-color: rgb(183, 131, 231);
     border-color: rgb(157, 58, 250);
   }
- 
+/*  
   .form-group label {
     display: block;
     margin-bottom: 8px;
@@ -54,7 +54,7 @@
     display: block;
     width: 100%;
   }
-  
+   */
 
 /* For screens less than 600px wide */
 @media (max-width: 750px) {
