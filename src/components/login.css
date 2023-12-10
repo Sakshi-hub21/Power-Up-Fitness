@@ -36,6 +36,19 @@
   filter: blur(4px); /* Adjust the blur intensity as needed */
   pointer-events: none; /* Allows pointer events to pass through the blurred elements */
 }
+ /* Login.css */
+.success-message {
+  color: green;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+/* Login.css */
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
 
 /* login.css */
 
