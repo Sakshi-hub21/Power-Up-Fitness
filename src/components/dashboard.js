@@ -7,7 +7,7 @@ class Dashboard extends React.Component {
     return (
       <div className="bg-slide">
         
-      <Sidebar />;
+      <Sidebar />
       <h1 className="h1-slide text-center">Welcome Trainer</h1>
     </div>
     
