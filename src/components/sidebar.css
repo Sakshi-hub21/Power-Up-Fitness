@@ -53,6 +53,8 @@
     border-left: 3px solid #1abc9c;
     padding-left: 12px;
   }
+
+
   
 /* sidebar.css */
 
@@ -86,6 +88,11 @@
     font-size: 14px;
     font-weight: bolder;
   }
+
+.nav-link{
+    font-size:15px;
+}
+    
 }
 @media (min-width: 350px) and (max-width: 491px) {
   .sidebar {
@@ -109,6 +116,10 @@
     font-size: 12px;
     font-weight: bolder;
   }
+
+    .nav-link{
+    font-size:13px;
+}
 }
 @media (max-width: 349px) {
   .sidebar {
@@ -132,4 +143,8 @@
     font-size: 9px;
     font-weight: bolder;
   }
+
+    .nav-link{
+    font-size:10px;
+}
 }
