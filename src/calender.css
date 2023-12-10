@@ -23,30 +23,9 @@
   width: 100vw;
 
 }
-
-/* @media screen and (max-width: 750px) {
-  .calendar {
-    margin-left: 150px;
-    width: 70%;
-    height: 70vh;
-    overflow-y: auto;
-
+.rbc-event-content{
+  font-size:8px;
 }
-  .calendar-event {
-  font-size: 2px;
-}
-} */
-
-/* @media (max-width: 1000px) {
-  .calendar {
-    margin-left: 350px;
-    width: 50%;
-    height: 70vh;
-    overflow-y: auto;
-    font-size: 12px;
-
-}
-} */
 @media (min-width:456px) and (max-width: 769px) {
   .calendar {
     margin-left: 32vw;
