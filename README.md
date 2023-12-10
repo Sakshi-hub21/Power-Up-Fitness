@@ -17,10 +17,10 @@ Power Up Fitness is a website for fitness trainer to schedule the client appoint
 * Frontend:
 
 1. React.js: Frontend framework for building the user interface and managing components
-2. Libraries:
-   a. react-datepicker: Used for date picker functionality.
-   b. react-big-calendar: Utilized for displaying calendar events.
-   c.  moment: A JavaScript library for parsing, validating, manipulating, and formatting dates.
+2. Libraries:</br>
+   a. react-datepicker: Used for date picker functionality.</br>
+   b. react-big-calendar: Utilized for displaying calendar events.</br>
+   c.  moment: A JavaScript library for parsing, validating, manipulating, and formatting dates.</br>
    d.  axios: HTTP client for making requests to the backend API.
 
 * Backend:
