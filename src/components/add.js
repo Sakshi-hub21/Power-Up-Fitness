@@ -116,7 +116,7 @@ export default function Add() {
         />
       </div>
       <div class="d-grid gap-2 col-6 mx-auto">
-      <button type="submit" className="btn btn-primary xl button-1">
+      <button type="submit" className="btn btn-primary lg button-1">
         Submit
       </button>
       </div>
