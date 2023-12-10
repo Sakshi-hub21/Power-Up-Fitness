@@ -49,7 +49,6 @@ export default function Add() {
 
   return (
     <>
-    <div className="container-fluid">
     <div className="body-f">
     <h1 className=" h1-add text-center mb-3">Add Client Data</h1>
     <div className="container-add d-flex align-items-center justify-content-center ">
@@ -125,7 +124,7 @@ export default function Add() {
     </form>
     </div>
     </div>
-            </div>
+
    
     
 
