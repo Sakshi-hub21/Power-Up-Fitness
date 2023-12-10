@@ -88,6 +88,7 @@ The request and response bodies that are used to communicate with the backend AP
 ## Usage Intruction
 
 * Website Navigation Video
+  https://www.kapwing.com/videos/6575a41baaf2115c8e986c01
 
 * Website Home Page
 
