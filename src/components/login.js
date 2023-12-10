@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [showSuccess, setShowSuccess] = useState(false);
   const [loginData, setLoginData] = useState({
     username: "",
     password: "",
   });
 
-   const [showInvalidPopup, setShowInvalidPopup] = useState(false);
-  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -26,13 +26,14 @@ const Login = () => {
 
       if (response.ok) {
         console.log(loginData.username);
+        setShowSuccess(true);
         navigate("/dashboard");
         // Handle success, e.g., redirect to a dashboard
-        setShowSuccessPopup(true); 
+        
         console.log("Login successful!");
       } else {
         // Handle error, e.g., show an error message
-        setShowInvalidPopup(true); 
+
         console.error("Invalid username or password");
       }
     } catch (error) {
@@ -45,13 +46,6 @@ const Login = () => {
     setLoginData({ ...loginData, [name]: value });
   };
 
-  const handleCloseInvalidPopup = () => {
-    setShowInvalidPopup(false);
-  };
-
-  const handleCloseSuccessPopup = () => {
-    setShowSuccessPopup(false);
-  };
 
   return (
     <>
@@ -62,7 +56,7 @@ const Login = () => {
         <div className="login-container rounded shadow-lg">
           <form onSubmit={handleSubmit} className="login-form">
             <h1 className="text-center mb-4"> Admin Login</h1>
-  
+            
             <div className="input-marg d-flex flex-column" id="text-design">
               <input
                 type="text"
@@ -91,20 +85,13 @@ const Login = () => {
         </div>
       </div>
 
-          {showInvalidPopup && (
-        <div className="popup invalid-popup">
-          <p>Invalid username or password. Please try again.</p>
-          <button onClick={handleCloseInvalidPopup}>Close</button>
+        </div>
+
+{showSuccess && (
+        <div className="popup success-popup">
+          <p>Login Successful!</p>
         </div>
       )}
-
-      {showSuccessPopup && (
-        <div className="popup success-popup">
-          <p>Login successful! Redirecting...</p>
-          {/* You can use setTimeout to automatically close the success popup after a certain duration */}
-          {/* setTimeout(() => setShowSuccessPopup(false), 3000); */}
-          <button onClick={handleCloseSuccessPopup}>Close</button>
-        </div>
       )}
     </>
   );
