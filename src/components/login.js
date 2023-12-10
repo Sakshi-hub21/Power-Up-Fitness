@@ -29,7 +29,7 @@ const Login = () => {
         console.log(loginData.username);
         navigate("/dashboard");
         // Handle success, e.g., redirect to a dashboard
-        setLoginSuccessMessage('Login successful!');
+        setLoginSuccess('Login successful!');
         console.log("Login successful!");
       } else {
         // Handle error, e.g., show an error message
@@ -56,7 +56,7 @@ const Login = () => {
           <form onSubmit={handleSubmit} className="login-form">
             <h1 className="text-center mb-4"> Admin Login</h1>
   {errorMessage && <p className="error-message">{errorMessage}</p>}
-            {loginSuccessMessage && <p className="success-message">{loginSuccessMessage}</p>}
+            {loginSuccess && <p className="success-message">{loginSuccess}</p>}
             <div className="input-marg d-flex flex-column" id="text-design">
               <input
                 type="text"
