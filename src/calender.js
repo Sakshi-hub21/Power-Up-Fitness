@@ -60,6 +60,7 @@ const MyCalendar = () => {
         color: "white",
         opacity: 0.8,
         display: "block",
+        font:10px,
 
       },
     };
