@@ -5,7 +5,7 @@ import "./dashboard.css"
 class Dashboard extends React.Component {
   render() {
     return (
-      <div className="bg-slide d-flex justify-content-center align-items-center">
+      <div className="bg-slide">
         
       <Sidebar />;
       <h1 className="h1-slide text-center">Welcome Trainer</h1>
