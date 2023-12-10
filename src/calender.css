@@ -5,19 +5,26 @@
   color: red;
 }
 .calendar{
-  margin-left: 340px;
-  height: 500px;
+  margin-left: 22vw;
+  height:80vh;
   width: 70vw;
+  border: 0.1px solid black;
+  box-Shadow:10px 10px 4px rgb(96,96,96);
+  background-color: white;
+  font-size: 12px;
 } 
 .calendar-event {
   font-size: 8px;
 }
 
 .bg-calendar{
-  background-color: rgb(221, 185, 207)
+  background-color: rgb(221, 185, 207);
+  height: 100vh;
+  width: 100vw;
+
 }
 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
   .calendar {
     margin-left: 150px;
     width: 70%;
@@ -28,16 +35,57 @@
   .calendar-event {
   font-size: 2px;
 }
-}
+} */
 
-@media (min-width:751) and (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .calendar {
     margin-left: 350px;
     width: 50%;
     height: 70vh;
     overflow-y: auto;
+    font-size: 12px;
 
+}
+} */
+@media (min-width:456px) and (max-width: 769px) {
+  .calendar {
+    margin-left: 32vw;
+    width: 60%;
+    height: 70vh;
+    overflow-y: auto;
+    font-size: 12px;
+
+  
+
+}
+.h1-calendar{
+  font-size: 30px;
+  margin-left: 150px;
+  color: red;
+}
+
+.rbc-btn-group button {
+  font-size: 12px;
+}
+}
+@media (min-width:280px) and (max-width: 457px) {
+  .calendar {
+    margin-left: 35vw;
+    width: 60%;
+    height: 70vh;
+    overflow-y: auto;
+    font-size: 9px;
+
+}
+.h1-calendar{
+  font-size: 20px;
+  margin-left: 22vw;
+  color: red;
+}
+
+.rbc-btn-group button {
+  font-size: 7px;
+}
 }
 
 
-}
