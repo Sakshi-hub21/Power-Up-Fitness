@@ -9,6 +9,8 @@ const Login = () => {
     password: "",
   });
 
+   const [showInvalidPopup, setShowInvalidPopup] = useState(false);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -26,11 +28,11 @@ const Login = () => {
         console.log(loginData.username);
         navigate("/dashboard");
         // Handle success, e.g., redirect to a dashboard
-
+        setShowSuccessPopup(true); 
         console.log("Login successful!");
       } else {
         // Handle error, e.g., show an error message
-
+        setShowInvalidPopup(true); 
         console.error("Invalid username or password");
       }
     } catch (error) {
@@ -41,6 +43,14 @@ const Login = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setLoginData({ ...loginData, [name]: value });
+  };
+
+  const handleCloseInvalidPopup = () => {
+    setShowInvalidPopup(false);
+  };
+
+  const handleCloseSuccessPopup = () => {
+    setShowSuccessPopup(false);
   };
 
   return (
@@ -80,6 +90,22 @@ const Login = () => {
           </form>
         </div>
       </div>
+
+          {showInvalidPopup && (
+        <div className="popup invalid-popup">
+          <p>Invalid username or password. Please try again.</p>
+          <button onClick={handleCloseInvalidPopup}>Close</button>
+        </div>
+      )}
+
+      {showSuccessPopup && (
+        <div className="popup success-popup">
+          <p>Login successful! Redirecting...</p>
+          {/* You can use setTimeout to automatically close the success popup after a certain duration */}
+          {/* setTimeout(() => setShowSuccessPopup(false), 3000); */}
+          <button onClick={handleCloseSuccessPopup}>Close</button>
+        </div>
+      )}
     </>
   );
 };
