@@ -8,14 +8,14 @@ const Login = () => {
     username: "",
     password: "",
   });
-     const [errorMessage, setErrorMessage] = useState('');
-     const [loginSuccess, setLoginSuccess] = useState(false);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     // Send login data to the backend
 
-
+         const [errorMessage, setErrorMessage] = useState('');
+     const [loginSuccess, setLoginSuccess] = useState(false);
     try {
       const response = await fetch("https://power-up-fitness-database1.onrender.com/login", {
         method: "POST",
