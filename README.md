@@ -92,7 +92,8 @@ The request and response bodies that are used to communicate with the backend AP
   
 * Website Home Page
 
-  ![Screenshot (118)](https://www.kapwing.com/videos/6575a41baaf2115c8e986c01)
+![Screenshot (118)](https://github.com/Sakshi-hub21/Power-Up-Fitness/assets/82663545/60b575e1-7d93-4b4c-9076-5e33e76ed76f)
+
 
   <p>This is a home page of the website with contains the our services page, about us page, book an appointment page, login and signup optiions which includes both trainer and client.</p>
 
