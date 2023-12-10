@@ -95,13 +95,7 @@ const [loading, setLoading] = useState(false);
               </span>
               {loading && <ClipLoader color="#4556FC" loading={true} size={20} />} {/* Show spinner if loading */}
             </button>
-            // <button
-            //   type="submit"
-            //   className="login-button w-100 text-center btn btn-info rounded p-2 my-2"
-                
-            // >
-            //   <span className="font-weight-bold text-white">LOGIN</span>
-            // </button>
+
           </form>
         </div>
       </div>
