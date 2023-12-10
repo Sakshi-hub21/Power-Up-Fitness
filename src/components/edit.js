@@ -64,7 +64,7 @@ export default function Edit() {
     event.preventDefault();
 
     try {
-      const response = await fetch(`https://power-up-fitness-database1.onrender.com:10000/update/${id}`, {
+      const response = await fetch(`https://power-up-fitness-database1.onrender.com/update/${id}`, {
         method: "PUT", // or "PATCH" depending on your API
         headers: {
           "Content-Type": "application/json",
