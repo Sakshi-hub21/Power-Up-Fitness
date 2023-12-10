@@ -33,7 +33,7 @@ const MyCalendar = () => {
   useEffect(() => {
     // Fetch dates from your Node.js backend
     axios
-      .get("http://localhost:5000/dates")
+      .get("https://power-up-fitness-database1.onrender.com/dates")
       .then((response) => {
         setDates(response.data);
         console.log(response.data);
@@ -79,7 +79,6 @@ const MyCalendar = () => {
           titleAccessor="title"
           tooltipAccessor="title"
           className="calendar"
-          style={{ height: "580px" ,border: "0.1px solid black", boxShadow:"10px 10px 4px rgb(96,96,96)", backgroundColor:'white' }}
           eventPropGetter={eventStyleGetter}
           components={{
             event: CustomEvent, // Use the CustomEvent component for rendering events
