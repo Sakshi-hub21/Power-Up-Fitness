@@ -8,11 +8,14 @@ const Login = () => {
     username: "",
     password: "",
   });
-
+     const [errorMessage, setErrorMessage] = useState('');
+     const [loginSuccess, setLoginSuccess] = useState(false);
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     // Send login data to the backend
+
+
     try {
       const response = await fetch("https://power-up-fitness-database1.onrender.com/login", {
         method: "POST",
@@ -26,9 +29,11 @@ const Login = () => {
         console.log(loginData.username);
         navigate("/dashboard");
         // Handle success, e.g., redirect to a dashboard
+        setLoginSuccessMessage('Login successful!');
         console.log("Login successful!");
       } else {
         // Handle error, e.g., show an error message
+        setErrorMessage('Invalid username or password');
         console.error("Invalid username or password");
       }
     } catch (error) {
@@ -50,6 +55,8 @@ const Login = () => {
         <div className="login-container rounded shadow-lg">
           <form onSubmit={handleSubmit} className="login-form">
             <h1 className="text-center mb-4"> Admin Login</h1>
+  {errorMessage && <p className="error-message">{errorMessage}</p>}
+            {loginSuccessMessage && <p className="success-message">{loginSuccessMessage}</p>}
             <div className="input-marg d-flex flex-column" id="text-design">
               <input
                 type="text"
