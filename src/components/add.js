@@ -115,7 +115,7 @@ export default function Add() {
           placeholderText="Time to book an appointment"
         />
       </div>
-      <div class="d-grid gap-2 col-6 mx-auto">
+      <div class="d-grid col-6 mx-auto">
       <button type="submit" className="btn btn-primary lg button-1">
         Submit
       </button>
