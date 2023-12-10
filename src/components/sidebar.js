@@ -10,7 +10,7 @@ const Sidebar = () => {
   useEffect(() => {
     async function fetchDataFromServer() {
       try {
-        const response = await fetch("https://power-up-fitness-database1.onrender.com:10000/addclient", {
+        const response = await fetch("https://power-up-fitness-database1.onrender.com/addclient", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
