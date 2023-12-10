@@ -11,10 +11,10 @@ export default function Clientdash(){
     <>
     
   <div className="bg-slide">
-  <button type="submit" onClick={submit} className="btn btn-primary lg button-3">
+  <button type="submit" onClick={submit} className="btn btn-primary button-3">
     Log Out
   </button>
-      <h1 className="h1-slide text-center">Welcome Client</h1>
+      <h1 className="h1-slide">Welcome Client</h1>
      
 
     </div>
