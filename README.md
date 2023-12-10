@@ -12,6 +12,25 @@ Power Up Fitness is a website for fitness trainer to schedule the client appoint
 * Trainer can delete the existing client details with its all data including appointment date and time.
 * Trainer can view all the appointments time and name on the calendar.
 
+## Used Technology
+
+* Frontend:
+
+** React.js: Frontend framework for building the user interface and managing components.
+** Libraries:
+*** react-datepicker: Used for date picker functionality.
+*** react-big-calendar: Utilized for displaying calendar events.
+*** moment: A JavaScript library for parsing, validating, manipulating, and formatting dates.
+*** axios: HTTP client for making requests to the backend API.
+
+* Backend:
+
+** PHP: Backend scripting language used alongside XAMPP (Apache, MySQL, PHP, and Perl).
+** MySQL: Database management system for storing and managing data.
+Additional:
+
+* Composer: Dependency management tool for PHP used to install necessary PHP dependencies.
+
 ## Extra Packages
 
 * react-datepicker
@@ -153,3 +172,11 @@ The request and response bodies that are used to communicate with the backend AP
  ![Screenshot (137)](https://github.com/Sakshi-hub21/Power-Up-Fitness/assets/82663545/16963c37-5b32-415c-835b-99a02ea1cfc9)
 
 <p>This is just the frontend part of the client dashboard as this website focuses on the fitness trainer dashboard.</p>
+
+## How to Contribute
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature`)
+3. Make your changes and commit them (`git commit -am 'Add feature'`)
+4. Push to the branch (`git push origin feature`)
+5. Create a Pull Request
