@@ -68,7 +68,7 @@ const Addclient = () => {
         </div>
         <div className="col-md-8">
           <h2 className="text-center">Client Appointment Details</h2>
-          <div className="block">
+          <div className="table-container">
             <table className="table table-dark">
               <thead>
                 <tr className="main-table">
