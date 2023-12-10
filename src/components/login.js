@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
+import ClipLoader from "react-spinners/ClipLoader"; 
 
 const Login = () => {
   const navigate = useNavigate();
@@ -9,11 +10,11 @@ const Login = () => {
     username: "",
     password: "",
   });
-
+const [loading, setLoading] = useState(false);
   
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    setLoading(true);
     // Send login data to the backend
     try {
       const response = await fetch("https://power-up-fitness-database1.onrender.com/login", {
@@ -27,7 +28,11 @@ const Login = () => {
       if (response.ok) {
         console.log(loginData.username);
         setShowSuccess(true);
-        navigate("/dashboard");
+        setTimeout(() => {
+          navigate("/dashboard");
+          console.log("Login successful!");
+        }, 2000);
+        // navigate("/dashboard");
         // Handle success, e.g., redirect to a dashboard
         
         console.log("Login successful!");
@@ -38,6 +43,11 @@ const Login = () => {
       }
     } catch (error) {
       console.error("Error:", error);
+    }finally {
+      // Set a timeout to ensure the spinner is visible for a minimum duration
+      setTimeout(() => {
+        setLoading(false); // Set loading back to false after processing
+      }, 1000); // 1000 milliseconds (1 second) delay for spinner visibility
     }
   };
 
