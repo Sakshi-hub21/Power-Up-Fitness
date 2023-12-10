@@ -26,6 +26,12 @@
     margin: 8px;
     padding:10px;
 }
+.input-2{
+    width: 40vw;
+    margin: 8px;
+    padding:10px;
+    border: 1px solid black;
+}
 
  .rounded-clock-picker {
     border-radius: 5px;
