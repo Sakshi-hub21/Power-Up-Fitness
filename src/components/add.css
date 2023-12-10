@@ -14,36 +14,35 @@
     align-items: center;
     border: 3px solid black;
     box-shadow: 5px 5px 5px 2px black;
-    width: 90vw;
-    height: 100vh;
-    border-radius: 30px;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+
+
 }
 
 .input-1{
     width: 40vw;
-    margin: 0px;
-    padding:0px;
-}
-.input-2{
-    width: 20vw;
-    margin: 3px;
-    padding:5px;
-    border: 1px solid black;
+    padding:6px;
+
 }
 
  .rounded-clock-picker {
     border-radius: 5px;
     height: 30px;
-    width: 30vw;
   }
   
-   .button-1{
+   .button-1 {
     background-color: #0d6efd;
     border-color: #0d6efd;
     color: #fff;
     
   }
-
+  
+    .button-1:hover {
+    background-color: rgb(183, 131, 231);
+    border-color: rgb(157, 58, 250);
+  }
 /*  
   .form-group label {
     display: block;
@@ -53,34 +52,40 @@
   .form-group input {
     display: block;
     width: 100%;
-  } */
-  
+  }
+   */
 
 /* For screens less than 600px wide */
-@media (max-width: 750px) {
+@media (max-width: 700px) {
     .container-add {
       width: 80vw;
       height: 80vh;
     }
   
-    .form-group input {
-      width: 60vw;
-      margin: 5px;
-    }
+.input-1{
+    width: 40vw;
+    padding:4px;
+
+}
   
     .rounded-clock-picker {
       height: 25px;
     }
-    .input-1{
-    width: 40vw;
-    margin: 0px;
-    padding:0px;
-}
-.input-2{
-    width: 30vw;
-    margin: 0px;
-    padding:0px;
-    border: 1px solid black;
-}
   }
+/* @media (min-width: 300px) and (max-width: 700px) {
+    .container-add {
+      width: 80vw;
+      height: 80vh;
+    }
+  
+.input-1{
+    width: 30vw;
+    padding:3px;
+
+}
+  
+    .rounded-clock-picker {
+      height: 25px;
+    }
+  } */
   
