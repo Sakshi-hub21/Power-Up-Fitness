@@ -10,7 +10,7 @@ const Addclient = () => {
   useEffect(() => {
     async function fetchDataFromServer() {
       try {
-        const response = await fetch("https://power-up-fitness-database1.onrender.com:10000/addclient", {
+        const response = await fetch("https://power-up-fitness-database1.onrender.com/addclient", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const Addclient = () => {
   const handleDelete = async (id) => {
     console.log(id);
     try {
-      const response = await fetch(`https://power-up-fitness-database1.onrender.com:10000/delete/${id}`, {
+      const response = await fetch(`https://power-up-fitness-database1.onrender.com/delete/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const Addclient = () => {
           <div className="block">
             <table className="table table-dark">
               <thead>
-                <tr>
+                <tr className="main-table">
                   
                   <th scope="col">First Name</th>
                   <th scope="col">Last Name</th>
@@ -79,7 +79,7 @@ const Addclient = () => {
                   <th scope="col">Action</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="main-table1">
                 {data1 &&
                   data1.map((item, index) => (
                     <tr key={index}>
@@ -88,7 +88,7 @@ const Addclient = () => {
                       <td>{item.last_name}</td>
                       <td>{item.Location}</td>
                       <td>
-                        <Link to={`/edit/${item.id}`} class="btn btn-info">
+                        <Link to={`/edit/${item.id}`} class="btn btn-info" id="button-css">
                           Update
                         </Link>
 
@@ -96,6 +96,7 @@ const Addclient = () => {
                           type="button"
                           onClick={() => handleDelete(item.id)}
                           class="btn btn-danger"
+                          id="button-css"
                         >
                           Delete
                         </button>
