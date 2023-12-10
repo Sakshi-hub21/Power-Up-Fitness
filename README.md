@@ -88,7 +88,8 @@ The request and response bodies that are used to communicate with the backend AP
 ## Usage Intruction
 
 * Website Navigation Video
-  ![]()
+ ![app](https://github.com/Sakshi-hub21/Power-Up-Fitness/assets/82663545/c676aa30-e8f9-409b-8f02-9b0f20d45cf8)
+
   
 * Website Home Page
 
