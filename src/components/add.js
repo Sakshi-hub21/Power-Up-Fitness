@@ -58,7 +58,7 @@ export default function Add() {
       <label htmlFor="fname">First Name</label>
         <input
           type="text"
-          className="form-control"
+          className="form-control input-2"
           id="firstName"
           aria-describedby="emailHelp"
           placeholder="Enter First Name"
@@ -70,7 +70,7 @@ export default function Add() {
       <label htmlFor="lname">Last Name</label>
         <input
           type="text"
-          className="form-control"
+          className="form-control input-2"
           id="lastName"
           aria-describedby="emailHelp"
           placeholder="Enter Last Name"
@@ -82,7 +82,7 @@ export default function Add() {
       <label htmlFor="location">Location</label>
         <input
           type="text"
-          className="form-control"
+          className="form-control input-2"
           id="location"
           name="loc"
           placeholder="Location"
@@ -94,7 +94,7 @@ export default function Add() {
       <label for="doa">Date of Appointment</label>
         <input
           type="date"
-          className="form-control"
+          className="form-control input-2"
           id="date"
           name="dat"
           placeholder="Date"
