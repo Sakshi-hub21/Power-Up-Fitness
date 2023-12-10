@@ -59,7 +59,7 @@ const MyCalendar = () => {
         borderRadius: "8px",
         color: "white",
         opacity: 0.8,
-        display: "block",
+        display: "block"
 
       },
     };
