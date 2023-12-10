@@ -33,7 +33,9 @@
 .block {
   margin: 20px;
 }
-
+.table-container{
+  overflow-y: auto;
+}
 /* Add more specific CSS styling as needed */
 @media (min-width:684px) and (max-width:1000px) {
   .col-md-8 {
