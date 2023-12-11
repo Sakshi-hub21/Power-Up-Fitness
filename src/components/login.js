@@ -32,8 +32,6 @@ const [loading, setLoading] = useState(false);
         }, 2000);
         // navigate("/dashboard");
         // Handle success, e.g., redirect to a dashboard
-        
-        console.log("Login successful!");
       } else {
         // Handle error, e.g., show an error message
 
@@ -91,7 +89,7 @@ const [loading, setLoading] = useState(false);
               <span className="font-weight-bold text-white">
                 {loading ? "Logging in..." : "LOGIN"}
               </span>
-              {loading && <ClipLoader color="#4556FC" loading={true} size={20} />} {/* Show spinner if loading */}
+              {loading && <ClipLoader color="#4556FC" loading={true} size={20} />}
             </button>
 
           </form>
