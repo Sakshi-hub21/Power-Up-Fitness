@@ -5,7 +5,6 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [showSuccess, setShowSuccess] = useState(false);
   const [loginData, setLoginData] = useState({
     username: "",
     password: "",
@@ -27,7 +26,6 @@ const [loading, setLoading] = useState(false);
 
       if (response.ok) {
         console.log(loginData.username);
-        setShowSuccess(true);
         setTimeout(() => {
           navigate("/dashboard");
           console.log("Login successful!");
@@ -102,12 +100,6 @@ const [loading, setLoading] = useState(false);
 
         </div>
 
-{showSuccess && (
-        <div className="popup success-popup">
-          <p>Login Successful!</p>
-        </div>
-      )}
-      )}
     </>
   );
 };
